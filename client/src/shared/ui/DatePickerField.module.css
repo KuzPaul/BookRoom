@@ -1,0 +1,25 @@
+.control {
+  position: relative;
+  width: 100%;
+}
+
+.popover {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 30;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.popoverRight {
+  left: auto;
+  right: 0;
+}
+
+.popoverOffsetMd {
+  top: calc(100% + 8px);
+  border-radius: var(--radius-sm);
+}

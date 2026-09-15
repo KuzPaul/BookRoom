@@ -1,0 +1,16 @@
+export { default as BuildingIcon } from "../../../assets/building.svg?react";
+export { default as CalendarIcon } from "../../../assets/Vector.svg?react";
+export { default as CheckIcon } from "../../../assets/check.svg?react";
+export { default as ClearCircleIcon } from "../../../assets/clear-circle.svg?react";
+export { default as ClockIcon } from "../../../assets/clock.svg?react";
+export { default as ErrorTriangleIcon } from "../../../assets/error-triangle.svg?react";
+export { default as HeaderIcon } from "../../../assets/header-icon.svg?react";
+export { default as InfoIcon } from "../../../assets/info.svg?react";
+export { default as NotReservationIcon } from "../../../assets/not-reservation.svg?react";
+export { default as OfficeIcon } from "../../../assets/office.svg?react";
+export { default as VideoIcon } from "../../../assets/video.svg?react";
+export { default as PenIcon } from "../../../assets/pen.svg?react";
+export { default as SearchIcon } from "../../../assets/search-icon.svg?react";
+export { default as TvIcon } from "../../../assets/tv.svg?react";
+export { default as UsersIcon } from "../../../assets/users.svg?react";
+export { default as HomeIcon } from "../../../assets/home.svg?react";

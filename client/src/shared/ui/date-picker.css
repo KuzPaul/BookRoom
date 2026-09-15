@@ -1,0 +1,102 @@
+.rdp-root {
+  --rdp-accent-color: var(--color-primary);
+  --rdp-accent-background-color: var(--color-success-bg);
+  --rdp-day-height: 36px;
+  --rdp-day-width: 36px;
+  --rdp-day_button-height: 36px;
+  --rdp-day_button-width: 36px;
+  --rdp-day_button-border: none;
+  --rdp-day_button-border-radius: var(--radius-sm);
+  --rdp-selected-border: none;
+  --rdp-nav-height: 40px;
+  --rdp-nav_button-height: 32px;
+  --rdp-nav_button-width: 32px;
+  --rdp-weekday-opacity: 1;
+  --rdp-outside-opacity: 1;
+  --rdp-disabled-opacity: 1;
+  --rdp-today-color: var(--color-text-primary);
+
+  padding: 16px;
+  font-size: 14px;
+  color: var(--color-text-primary);
+}
+
+.rdp-month_caption {
+  align-items: center;
+  height: var(--rdp-nav-height);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.rdp-caption_label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.rdp-nav {
+  height: var(--rdp-nav-height);
+}
+
+.rdp-button_previous,
+.rdp-button_next {
+  color: var(--color-text-secondary);
+}
+
+.rdp-root .rdp-chevron {
+  fill: var(--color-text-secondary);
+}
+
+.rdp-weekday {
+  padding: 8px 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  opacity: 1;
+}
+
+.rdp-day_button {
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.rdp-day_button:hover:not(:disabled) {
+  background: var(--color-hover-bg);
+}
+
+.rdp-day_button:focus,
+.rdp-day_button:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.rdp-selected {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.rdp-selected .rdp-day_button {
+  background: var(--color-primary);
+  color: var(--color-bg-header);
+  border: none;
+  box-shadow: none;
+}
+
+.rdp-selected .rdp-day_button:hover:not(:disabled) {
+  background: var(--color-success-bg);
+  color: var(--color-text-primary);
+}
+
+.rdp-today:not(.rdp-selected) .rdp-day_button {
+  background: transparent;
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.rdp-disabled:not(.rdp-selected) .rdp-day_button {
+  color: var(--color-text-muted);
+  opacity: 1;
+  cursor: not-allowed;
+}
