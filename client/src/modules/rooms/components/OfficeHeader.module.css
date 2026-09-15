@@ -1,0 +1,45 @@
+.officeSection {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 20px;
+}
+
+.officeRow {
+  display: flex;
+  align-items: center;
+}
+
+.officeSelect {
+  appearance: none;
+  border: none;
+  background-color: var(--color-bg-surface);
+  font: inherit;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  padding: 0 28px 0 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23475569' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.officeSelect:disabled {
+  cursor: default;
+  color: var(--color-text-secondary);
+}
+
+.officeMeta {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 720px) {
+  .officeSelect {
+    font-size: 22px;
+  }
+}
