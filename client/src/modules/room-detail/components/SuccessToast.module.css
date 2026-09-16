@@ -1,0 +1,76 @@
+.toast {
+  position: fixed;
+  top: 88px;
+  left: 50%;
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: min(520px, calc(100vw - 32px));
+  padding: 16px 20px;
+  border: 1px solid var(--color-success-border);
+  border-radius: 12px;
+  background: var(--color-bg-surface);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+  transform: translateX(-50%);
+}
+
+.iconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--color-success-bg);
+  color: var(--color-primary);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--color-text-primary);
+}
+
+.text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--color-text-secondary);
+}
+
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--color-text-muted);
+  cursor: pointer;
+}
+
+.closeIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.close:hover {
+  color: var(--color-text-secondary);
+}

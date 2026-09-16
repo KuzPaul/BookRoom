@@ -1,0 +1,199 @@
+.schedule {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.heading {
+  margin: 0 0 4px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.dateLabel {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.datePicker {
+  width: auto;
+  flex-shrink: 0;
+}
+
+.dateButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-surface);
+  font: inherit;
+  font-size: 14px;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dateButton:hover {
+  border-color: var(--color-primary);
+}
+
+.calendarIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: var(--color-text-secondary);
+}
+
+.gridWrap {
+  position: relative;
+  height: 616px;
+}
+
+.timeColumn {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 52px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.linesColumn {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.gridLine {
+  position: absolute;
+  left: 64px;
+  right: 0;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.hourLabel {
+  position: absolute;
+  left: 0;
+  width: 52px;
+  padding-right: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #475569;
+  line-height: 1;
+  text-align: right;
+}
+
+.hourLabelLast {
+  transform: translateY(-100%);
+}
+
+.blocksLayer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 64px;
+}
+
+.booking,
+.bookingOwn,
+.bookingOther {
+  position: absolute;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.bookingOwn {
+  display: flex;
+  align-items: center;
+  background: var(--color-success-bg);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  color: var(--color-success-text);
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.bookingOther {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: var(--color-unavailable-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-primary);
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.bookingOwn.bookingCompact {
+  padding: 0 12px;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.bookingOther.bookingCompact {
+  padding: 0 12px;
+  font-size: 12px;
+  line-height: 1;
+  justify-content: flex-start;
+}
+
+.bookingCompact .bookingTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bookingTitle {
+  margin: 0;
+  font-weight: 600;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bookButton {
+  height: 44px;
+  padding: 0 24px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--color-primary);
+  color: #fff;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bookButton:hover {
+  background: var(--color-primary-hover);
+}
+
+.bookButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

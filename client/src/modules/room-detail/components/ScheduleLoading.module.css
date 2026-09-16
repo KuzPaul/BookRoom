@@ -1,0 +1,48 @@
+.headerSkeleton {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.line {
+  border-radius: 6px;
+  background: linear-gradient(90deg, #eef2f6 25%, #f8fafc 50%, #eef2f6 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+.titleLine {
+  width: 180px;
+  height: 24px;
+}
+
+.subtitleLine {
+  width: 220px;
+  height: 16px;
+  margin-top: 8px;
+}
+
+.buttonLine {
+  width: 140px;
+  height: 40px;
+}
+
+.footerSkeleton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footerButton {
+  width: 200px;
+  height: 44px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}

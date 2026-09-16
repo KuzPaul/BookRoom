@@ -1,0 +1,33 @@
+.segment {
+  display: inline-block;
+  height: 14px;
+  border-radius: 4px;
+}
+
+.segmentShort {
+  width: 88px;
+}
+
+.segmentMedium {
+  width: 72px;
+}
+
+.segmentLong {
+  width: 120px;
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #eef2f6 25%, #f8fafc 50%, #eef2f6 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
