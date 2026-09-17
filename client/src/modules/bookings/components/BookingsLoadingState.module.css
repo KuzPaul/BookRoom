@@ -1,0 +1,207 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 32px var(--container-padding) var(--page-padding-bottom);
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.titleSkeleton {
+  width: 280px;
+  height: 32px;
+  border-radius: 6px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.filterSkeleton {
+  height: 44px;
+  border-radius: var(--radius-sm);
+}
+
+.filterSkeletonOffice {
+  width: 156px;
+}
+
+.filterSkeletonTime {
+  width: 150px;
+}
+
+.tabsBar {
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.tabSkeleton {
+  height: 16px;
+  border-radius: 4px;
+}
+
+.tabSkeletonUpcoming {
+  width: 148px;
+}
+
+.tabSkeletonPast {
+  width: 92px;
+}
+
+.cardSkeleton {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 24px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-surface);
+}
+
+.dateSkeleton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-surface);
+}
+
+.dateMonthSkeleton {
+  width: 44px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.dateDaySkeleton {
+  width: 34px;
+  height: 28px;
+  border-radius: 6px;
+}
+
+.bodySkeleton {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.titleLine {
+  width: min(420px, 55%);
+  height: 18px;
+  border-radius: 4px;
+}
+
+.metaSkeleton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.metaPart {
+  height: 14px;
+  border-radius: 4px;
+}
+
+.metaPartLong {
+  width: 72px;
+}
+
+.metaPartMedium {
+  width: 56px;
+}
+
+.metaPartShort {
+  width: 88px;
+}
+
+.metaDot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  flex-shrink: 0;
+}
+
+.buttonSkeleton {
+  width: 100px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #eef2f6 25%, #f8fafc 50%, #eef2f6 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .wrap {
+    padding-block: 24px 32px;
+  }
+
+  .topRow {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .filters {
+    width: 100%;
+  }
+
+  .filterSkeletonOffice,
+  .filterSkeletonTime {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+  }
+
+  .cardSkeleton {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .buttonSkeleton {
+    width: 100%;
+  }
+}
